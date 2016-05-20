@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ClungUp</string>
+    <string name="title">ClungUp</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="author_name">Rahmi</string>
+    <string name="enter_name">Enter your name</string>
+    <string name="btn_join">JOIN</string>
+    <string name="btn_send">Send</string>
+    <string name="jika">, Jika Tidak Memiliki Akun</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="id">ID</string>
+	<string name="action_menu">menu</string>
+	<string name="logo">logo</string>
+	<string name="action_setting">setting</string>
+
+    <string name="home_icon">Home</string>
+    <string name="delapan_beach_icon">8 Beach</string>
+    <string name="information_icon">Information</string>
+    <string name="reservation_icon">Reservation</string>
+    <string name="camera_icon">Camera</string>
+    <string name="galery_icon">Galery</string>
+    <string name="location_icon">Location</string>
+</resources>

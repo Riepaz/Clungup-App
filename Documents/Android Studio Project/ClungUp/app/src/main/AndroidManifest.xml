@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.array.rahma.clungup" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_clungup"
+        android:label="@string/app_name">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".loginForm"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.array.rahma.clungup.SplashScreen" />
+            <intent-filter>
+                <action android:name="com.array.rahma.clungup.menuUtama" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".menuUtama"
+            android:theme="@style/delapanPantaiApps"
+            android:screenOrientation="portrait"
+            android:label=""
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".loginForm" />
+            <intent-filter>
+                <action android:name="com.array.rahma.clungup.delapanPantai" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".register"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:label=""
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".loginForm" />
+            <intent-filter>
+                <action android:name="com.array.rahma.clungup.register" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".delapanPantai"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            android:label=""
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".loginForm" />
+            <intent-filter>
+                <action android:name="com.array.rahma.clungup.delapanPantai" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

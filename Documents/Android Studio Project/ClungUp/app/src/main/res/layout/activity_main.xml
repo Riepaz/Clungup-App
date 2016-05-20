@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    android:orientation="vertical" >
+
+    <!-- author info -->
+    <FrameLayout
+        android:id="@+id/FrameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+    	android:layout_weight="0.5"  >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/clungupiconsplash" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/FrameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+    	android:layout_weight="0.5"
+        android:layout_marginBottom="20dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center|center_horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/identitas"
+                    android:layout_width="240dp"
+                    android:layout_height="35dp"
+                    android:layout_weight="2"
+                    android:background="@color/bg_msg_input"
+                    android:inputType="textPersonName"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="@string/id"
+                    android:padding="10dip"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="5pt" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="240dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-light"
+                    android:background="@color/bg_msg_input"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:padding="10dip"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="5pt" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center|center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button1"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="206dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/loginbutton_style" />
+
+                <Button
+                    android:id="@+id/button2"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="206dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/registerbutton_style" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

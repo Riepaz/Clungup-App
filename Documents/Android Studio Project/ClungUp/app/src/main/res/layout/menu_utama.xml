@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/actionbar"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/actionbar"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar">
+        </include>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView" >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_margin="10dp"
+                    >
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|center_vertical"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="clip_vertical">
+
+                            <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/home_button"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/home_button_style"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/home_icon"
+                                android:id="@+id/textView3"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center_vertical|center|center_horizontal"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_margin="10dp"
+                                android:id="@+id/lapanpantai_button"
+                                android:background="@drawable/delapanpantai_button_style"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/delapan_beach_icon"
+                                android:id="@+id/textView2"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center_vertical|center|center_horizontal" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/information_button"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/information_button_style"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/information_icon"
+                                android:id="@+id/textView"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center_vertical|center|center_horizontal" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_vertical"
+                            >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                    android:id="@+id/reservation_button"
+                                    android:layout_margin="10dp"
+                                    android:background="@drawable/reservation_button_style"
+                                    />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/reservation_icon"
+                                android:id="@+id/textView5"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center_vertical|center|center_horizontal"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                    android:layout_margin="10dp"
+                                    android:id="@+id/camera_button"
+                                    android:background="@drawable/camera_button_style"
+                                    />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/camera_icon"
+                                android:id="@+id/textView6"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center_vertical|center|center_horizontal"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                    android:id="@+id/galery_button"
+                                    android:layout_margin="10dp"
+                                    android:background="@drawable/galery_button_style"
+                                    />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/galery_icon"
+                                android:id="@+id/textView4"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center_vertical|center|center_horizontal"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center|center_horizontal"
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            >
+
+                            <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/imageButton"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/location_button_style" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/location_icon"
+                                android:id="@+id/textView7"
+                                android:textColor="#ffffff"
+                                android:layout_gravity="center_vertical|center|center_horizontal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </ScrollView>reservation_button_style.xml
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/navList"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="#99ffffff"/>
+</android.support.v4.widget.DrawerLayout>
